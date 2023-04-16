@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+     <title>Bonsai</title>
+     <!--Bootstap-->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+     <!--Linking css file-->
+     <link rel="stylesheet" href="index.css">
+      <!--Fonts Awesome-->
+    <!--Link Icon -->
+    <link rel="icon" href="https://assets-global.website-files.com/635ac9564cc3682ce1536786/635e93995f68fe1c62813ba5_Path%20(2).png">
+      <script src="https://kit.fontawesome.com/202d73839d.js" crossorigin="anonymous"></script>
+    </head>
+     <body>
+       <!--Navbar section-->
+       <section>
+        <!--Navbar-->
+         <nav class="navbar navbar-expand-lg ">
+          <a class="navbar-brand" href="#"><img src="https://assets-global.website-files.com/635ac9564cc3682ce1536786/635b95cfdbc1e264b35486ad_Symbols.svg"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+
+                <li class="nav-item underline-border" onmouseover="appearProduct()" onmouseout="disappearProduct()"><a class="nav-link hand-cursor" >Product<button id="dropdown-product-button"><i class="fa-sharp fa-solid fa-circle-chevron-down"></i></button></a>
+                <div id="product-mobile-div" class="hide">
+                  <ul class="product-mobile-list">
+                    <li><a >CRM</a></li>
+                    <li><a >Scheduling</a></li>
+                    <li><a >Proposals</a></li>
+                    <li><a >Forms</a></li>
+                    <li><a >TimeTracking</a></li>
+                    <li><a >File sharing</a></li>
+                    <li><a >Foms</a></li>
+                    <li><a >Conacts</a></li>
+                  </ul>
+                </div>
+                </li>
+                <li class="nav-item underline-border"><a class="nav-link hand-cursor" onmouseover="appearIndustries()" onmouseout="disappearIndustries()">Industries<button id="dropdown-industries-button"><i class="fa-sharp fa-solid fa-circle-chevron-down"></i></button></a>
+                  <div id="industries-mobile-div" class="hide">
+                    <ul class="product-mobile-list">
+                      <li><a >CRM</a></li>
+                      <li><a >Scheduling</a></li>
+                      <li><a >Proposals</a></li>
+                      <li><a >Forms</a></li>
+                      <li><a >TimeTracking</a></li>
+                      <li><a >File sharing</a></li>
+                      <li><a >Foms</a></li>
+                      <li><a >Conacts</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="nav-item"><a  class="nav-link underline-border hand-cursor" onmouseover="appearTemplates()" onmouseout="disappearTemplates()">Templates</a></li>
+                <li class="nav-item"><a  class="nav-link hand-cursor underline-border">Pricing</a></li>
+                <li class="nav-item"><a  class="nav-link underline-border hand-cursor">Reviews</a></li>
+              </ul> 
+              <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link btn btn-lg btn-outline-dark">Log in</a></li>
+                <li class="nav-item"><a class="nav-link btn btn-lg btn-outline-dark">Start Free</a></li>
+              </ul>
+             <div class="navbar-border"></div>
+                <div class="lower-div-container">
+                
+                  <a href="" class="lower-div-anchor">Small Business</a>
+                  <a href="" class="lower-div-anchor">Agencies</a>
+                  <a href="" class="lower-div-anchor">Freelancers</a>
+                </div>
+                <div class="lower-div-container2">
+                   
+                </div>
+        <!--Products hover div-->
+          <div class="flex-container hide" onmouseover="appearProduct()" onmouseout="disappearProduct()" id="product">
+            <div>
+              <p>Client Management</p>
+              <ul class="hover-list">
+                <li><a class="hover-list-a" href="">CRM</a></li>
+                <li><a class="hover-list-a" href="">Scheduling</a></li>
+                <li><a class="hover-list-a" href="">Proposals</a></li>
+                <li><a class="hover-list-a" href="">Proposals</a></li>
+                <li><a class="hover-list-a" href="">Contracts</a></li>
+                <li><a class="hover-list-a" href="">Forms</a></li>
+              </ul>     
+            </div>
+            <div>
+              <p>Project Management</p>
+              <ul class="hover-list">
+                <li><a class="hover-list-a" href="">Time Tracking</a></li>
+                <li><a class="hover-list-a" href="">Tasks</a></li>
+                <li><a class="hover-list-a" href="">File Sharing</a></li>
+                <li><a class="hover-list-a" href="">Client Portal</a></li>
+                <li><a class="hover-list-a" href="">Collabosration</a></li>
+                
+              </ul>
+            </div>
+            <div>
+              <p>Financial Management</p>
+              <ul class="hover-list">
+                <li><a class="hover-list-a" href="">Invoicing</a></li>
+                <li><a class="hover-list-a" href="">Payments</a></li>
+                <li><a class="hover-list-a" href="">Accounting</a></li>
+                <li><a class="hover-list-a" href="">Taxes</a></li>
+                <li><a class="hover-list-a" href="">Banking</a></li>
+              </ul>
+            </div>
+            <div>
+              <p>What's New</p>
+              <img class="hover-list-img" src="https://assets-global.website-files.com/635ac9564cc3682ce1536786/6398d9d0935e08a732d0c785_scheduling-preview.jpg">
+              <p>Branded scheduling portal</p>
+              <a class="learnMore" href="">Learn More</a>
+            </div>
+          </div>
+        <!--Industries hover div--> 
+          <div class="flex-container hide" id="industries" onmouseover="appearIndustries()" onmouseout="disappearIndustries()">
+            <div>
+              <p>Business Services</p>
+              <ul class="hover-list">
+                <li><a class="hover-list-a" href="">Consulting</a></li>
+                <li><a class="hover-list-a" href="">Marketing</a></li>
+                <li><a class="hover-list-a" href="">Recruiting</a></li>
+                <li><a class="hover-list-a" href="">Virtual Assistant</a></li>
+                <li><a class="hover-list-a" href="">More...</a></li>
+                
+              </ul>     
+            </div>
+            <div>
+              <p>Creative And Design</p>
+              <ul class="hover-list">
+                <li><a class="hover-list-a" href="">Design</a></li>
+                <li><a class="hover-list-a" href="">Photography</a></li>
+                <li><a class="hover-list-a" href="">Software Development</a></li>
+                <li><a class="hover-list-a" href="">Writing</a></li>
+                <li><a class="hover-list-a" href="">More...</a></li>
+                
+              </ul>
+            </div>
+            <div>
+              <p>Professional Services</p>
+              <ul class="hover-list">
+                <li><a class="hover-list-a" href="">Architecture</a></li>
+                <li><a class="hover-list-a" href="">Accounting</a></li>
+                <li><a class="hover-list-a" href="">Coaching</a></li>
+                <li><a class="hover-list-a" href="">Legal</a></li>
+                <li><a class="hover-list-a" href="">More...</a></li>
+              </ul>
+            </div>
+           
+            <div>
+              <p>Other Services</p>
+              <ul class="hover-list">
+                <li><a class="hover-list-a" href="">Event Planning</a></li>
+                <li><a class="hover-list-a" href="">Interior Desing</a></li>
+                <li><a class="hover-list-a" href="">Real Estate</a></li>
+                <li><a class="hover-list-a" href="">More...</a></li>
+              </ul>
+            </div>
+           
+          </div>
+          <!--Templates hover div-->
+          <div class="flex-container hide" id="templates" onmouseover="appearTemplates()" onmouseout="disappearTemplates()">
+            <div>
+              
+              <ul class="hover-list">
+                <li><a class="hover-list-a" href="">Contract Templates</a></li>
+                <li><a class="hover-list-a" href="">Proposal Templates</a></li>
+                <li><a class="hover-list-a" href="">Invoice Templates</a></li>
+                <li><a class="hover-list-a" href="">Quote Templates</a></li>
+                <li><a class="hover-list-a" href="">Scope of work Templates</a></li>
+                <li><a class="hover-list-a" href="">Brief Templates</a></li>
+                <li><a class="hover-list-a" href="">Form Templates</a></li>
+                
+              </ul>     
+            </div>
+            <div>
+              <p>Featured contract templates</p>
+              <ul class="hover-list">
+                <li><a class="hover-list-a" href="">Client Contract Template</a></li>
+                <li><a class="hover-list-a" href="">Free Design Contract Template</a></li>
+                <li><a class="hover-list-a" href="">Free freelancer Contract Template</a></li>  
+              </ul>
+            </div>
+            <div>
+              <ul class="hover-list">
+                <li><a class="hover-list-a" href="">Construction Contract Template</a></li>
+                <li><a class="hover-list-a" href="">Free Employment Contract Template</a></li>
+              </ul>
+            </div>
+             <div class="learnMore" style="height:25px;">
+              <a class="learnMore-a" href="">Learn more</a>
+             </div>
+             
+             
+           
+          </div>
+          </nav>
+       </section>
+      <!--Pricing section-->
+       <section id="month-section">
+         <div class="pricing-div" id="pricing-div-id">
+            <div class="pricing-heading">
+              <h1 class="pricing-heading-text">Pick the Best Plan for your business</h1>
+            </div>
+            <!--Toggle switch-->
+            <div class="toggle-switch">
+              <input type="checkbox" id="check">
+              <label for="check"><div class="switch-div"><div class="left-item">Monthly</div><div class="right-item">Yearly</div></div></label>
+            </div>
+                <!--Plans flex (MONTH)--> 
+                <div class="plans-container" id="plans-container-1">
+                   <!--Item 1-->
+                    <div class="flex-items item1">
+                      <h1 class="plan-item-heading">Starter</h1>
+                      <h2>$ 24<span class="plan-permonth">/month</span></h2>
+                      <button class="btn btn-outline-dark plan-button">Start for free</button>
+                      <p class="plan-paragraph">Ideal for freelancers and contractors just starting out.
+                        Billed annually.</p>
+                        <!--List items-->
+                      <div  class="plan-list-div">
+                        <ul class="plan-list">
+                          <li class="plan-list-li">
+                            <img class="checked-icon" src="https://assets-global.website-files.com/635ac9564cc3682ce1536786/637637410d31673cc7050386_green%20check.svg">All templates
+                          </li>
+                          <li class="plan-list-li">
+                            <img class="checked-icon" src="https://assets-global.website-files.com/635ac9564cc3682ce1536786/637637410d31673cc7050386_green%20check.svg">Unlimited Clients & Projects
+                          </li>
+                          <li class="plan-list-li">
+                            <img class="checked-icon" src="https://assets-global.website-files.com/635ac9564cc3682ce1536786/637637410d31673cc7050386_green%20check.svg">Invoicing & Payments
+                          </li>
+                        
+                        </ul>
+                      </div>
+                      <button class="btn btn-outline-dark plan-button">Start for free</button>
+                    </div>
+                    <!--Item 2-->
+                    <div class="flex-items item2">
+                     
+                                             
+                        <h1 class="plan-item-heading">Professional</h1>
+                        <h2>$ 32<span class="plan-permonth">/month</span></h2>
+                        <button class="btn btn-outline-dark plan-button">Start for free</button>
+                        <p class="plan-paragraph">Everything a growing independent business needs to thrive
+                          Billed annually.</p>
+                              <!-- List items-->
+                        <div  class="plan-list-div">
+                          <ul class="plan-list">
+                            <li class="plan-list-li">
+                              <img class="checked-icon" src="https://assets-global.website-files.com/635ac9564cc3682ce1536786/637637410d31673cc7050386_green%20check.svg">All templates
+                            </li>
+                            <li class="plan-list-li">
+                              <img class="checked-icon" src="https://assets-global.website-files.com/635ac9564cc3682ce1536786/637637410d31673cc7050386_green%20check.svg">Unlimited Clients & Projects
+                            </li>
+                            <li class="plan-list-li">
+                              <img class="checked-icon" src="https://assets-global.website-files.com/635ac9564cc3682ce1536786/637637410d31673cc7050386_green%20check.svg">Invoicing & Payments
+                            </li>
+                          
+                          </ul>
+                        </div>
+                        <button class="btn btn-outline-dark plan-button">Start for free</button>
+                      
+                       <div class="orange-div">
+                        <p>Best value for money</p>
+                       </div>
+
+                    
+                    </div>
+                    
+                    <!--Item 3-->
+                    <div class="flex-items item3">
+                     
+                      
+                        <h1 class="plan-item-heading">Business</h1>
+                        <h2>$ 52<span class="plan-permonth">/month</span></h2>
+                        <button class="btn btn-outline-dark plan-button">Start for free</button>
+                        <p class="plan-paragraph">The perfect package for small businesses and agencies.
+                          Billed annually.</p>
+                              <!--List items-->
+                        <div  class="plan-list-div">
+                          <ul class="plan-list">
+                            <li class="plan-list-li">
+                              <img class="checked-icon" src="https://assets-global.website-files.com/635ac9564cc3682ce1536786/637637410d31673cc7050386_green%20check.svg">All templates
+                            </li>
+                            <li class="plan-list-li">
+                              <img class="checked-icon" src="https://assets-global.website-files.com/635ac9564cc3682ce1536786/637637410d31673cc7050386_green%20check.svg">Unlimited Clients & Projects
+                            </li>
+                            <li class="plan-list-li">
+                              <img class="checked-icon" src="https://assets-global.website-files.com/635ac9564cc3682ce1536786/637637410d31673cc7050386_green%20check.svg">Invoicing & Payments
+                            </li>
+                          
+                          </ul>
+                        </div>
+                        <button class="btn btn-outline-dark plan-button">Start for free</button>
+                      </div>
+                     
+                     
+                </div>
+                <!--Plans flex (Year)-->
+                <div class="plans-container" id="plans-container-2">
+                <!--Item 1-->
+                 <div class="flex-items item1">
+                   <h1 class="plan-item-heading">Starter</h1>
+                   <h2>$ 28<span class="plan-permonth">/month</span></h2>
+                   <button class="btn btn-outline-dark plan-button">Start for free</button>
+                   <p class="plan-paragraph">Ideal for freelancers and contractors just starting out.
+                     Billed annually.</p>
+                     <!--List items-->
+                   <div  class="plan-list-div">
+                     <ul class="plan-list">
+                       <li class="plan-list-li">
+                         <img class="checked-icon" src="https://assets-global.website-files.com/635ac9564cc3682ce1536786/637637410d31673cc7050386_green%20check.svg">All templates
+                       </li>
+                       <li class="plan-list-li">
+                         <img class="checked-icon" src="https://assets-global.website-files.com/635ac9564cc3682ce1536786/637637410d31673cc7050386_green%20check.svg">Unlimited Clients & Projects
+                       </li>
+                       <li class="plan-list-li">
+                         <img class="checked-icon" src="https://assets-global.website-files.com/635ac9564cc3682ce1536786/637637410d31673cc7050386_green%20check.svg">Invoicing & Payments
+                       </li>
+                     
+                     </ul>
+                   </div>
+                   <button class="btn btn-outline-dark plan-button">Start for free</button>
+                 </div>
+                 <!--Item 2-->
+                 <div class="flex-items item2">
+                  
+                                          
+                     <h1 class="plan-item-heading">Professional</h1>
+                     <h2>$ 39<span class="plan-permonth">/month</span></h2>
+                     <button class="btn btn-outline-dark plan-button">Start for free</button>
+                     <p class="plan-paragraph">Everything a growing independent business needs to thrive
+                       Billed annually.</p>
+                           <!-- List items-->
+                     <div  class="plan-list-div">
+                       <ul class="plan-list">
+                         <li class="plan-list-li">
+                           <img class="checked-icon" src="https://assets-global.website-files.com/635ac9564cc3682ce1536786/637637410d31673cc7050386_green%20check.svg">All templates
+                         </li>
+                         <li class="plan-list-li">
+                           <img class="checked-icon" src="https://assets-global.website-files.com/635ac9564cc3682ce1536786/637637410d31673cc7050386_green%20check.svg">Unlimited Clients & Projects
+                         </li>
+                         <li class="plan-list-li">
+                           <img class="checked-icon" src="https://assets-global.website-files.com/635ac9564cc3682ce1536786/637637410d31673cc7050386_green%20check.svg">Invoicing & Payments
+                         </li>
+                       
+                       </ul>
+                     </div>
+                     <button class="btn btn-outline-dark plan-button">Start for free</button>
+                   
+                    <div class="orange-div">
+                     <p>Most Popular</p>
+                    </div>
+
+                 
+                 </div>
+                 
+                 <!--Item 3-->
+                 <div class="flex-items item3">
+                  
+                   
+                     <h1 class="plan-item-heading">Business</h1>
+                     <h2>$ 79<span class="plan-permonth">/month</span></h2>
+                     <button class="btn btn-outline-dark plan-button">Start for free</button>
+                     <p class="plan-paragraph">The perfect package for small businesses and agencies.
+                       Billed annually.</p>
+                           <!--List items-->
+                     <div  class="plan-list-div">
+                       <ul class="plan-list">
+                         <li class="plan-list-li">
+                           <img class="checked-icon" src="https://assets-global.website-files.com/635ac9564cc3682ce1536786/637637410d31673cc7050386_green%20check.svg">All templates
+                         </li>
+                         <li class="plan-list-li">
+                           <img class="checked-icon" src="https://assets-global.website-files.com/635ac9564cc3682ce1536786/637637410d31673cc7050386_green%20check.svg">Unlimited Clients & Projects
+                         </li>
+                         <li class="plan-list-li">
+                           <img class="checked-icon" src="https://assets-global.website-files.com/635ac9564cc3682ce1536786/637637410d31673cc7050386_green%20check.svg">Invoicing & Payments
+                         </li>
+                       
+                       </ul>
+                     </div>
+                     <button class="btn btn-outline-dark plan-button">Start for free</button>
+                   </div>
+                  
+                  
+                </div>
+         </div>
+       </section>
+       <!-- Year Section-->
+       <!-- <section id="year-section"> -->
+             <!--Plans flex-->
+              <!-- <div class="plans-container" id="plans-container-2"> -->
+                 <!--Item 1-->
+                  <!-- <div class="flex-items item1">
+                    <h1 class="plan-item-heading">Starter</h1>
+                    <h2>$ 28<span class="plan-permonth">/month</span></h2>
+                    <button class="btn btn-outline-dark plan-button">Start for free</button>
+                    <p class="plan-paragraph">Ideal for freelancers and contractors just starting out.
+                      Billed annually.</p> -->
+                      <!--List items-->
+                    <!-- <div  class="plan-list-div"> -->
+                      <!-- <ul class="plan-list">
+                        <li class="plan-list-li">
+                          <img class="checked-icon" src="https://assets-global.website-files.com/635ac9564cc3682ce1536786/637637410d31673cc7050386_green%20check.svg">All templates
+                        </li>
+                        <li class="plan-list-li">
+                          <img class="checked-icon" src="https://assets-global.website-files.com/635ac9564cc3682ce1536786/637637410d31673cc7050386_green%20check.svg">Unlimited Clients & Projects
+                        </li>
+                        <li class="plan-list-li">
+                          <img class="checked-icon" src="https://assets-global.website-files.com/635ac9564cc3682ce1536786/637637410d31673cc7050386_green%20check.svg">Invoicing & Payments
+                        </li>
+                      
+                      </ul>
+                    </div>
+                    <button class="btn btn-outline-dark plan-button">Start for free</button>
+                  </div> -->
+                  <!--Item 2-->
+                  <!-- <div class="flex-items item2">
+                   
+                                           
+                      <h1 class="plan-item-heading">Professional</h1>
+                      <h2>$ 39<span class="plan-permonth">/month</span></h2>
+                      <button class="btn btn-outline-dark plan-button">Start for free</button>
+                      <p class="plan-paragraph">Everything a growing independent business needs to thrive
+                        Billed annually.</p> -->
+                            <!-- List items-->
+                      <!-- <div  class="plan-list-div">
+                        <ul class="plan-list">
+                          <li class="plan-list-li">
+                            <img class="checked-icon" src="https://assets-global.website-files.com/635ac9564cc3682ce1536786/637637410d31673cc7050386_green%20check.svg">All templates
+                          </li>
+                          <li class="plan-list-li">
+                            <img class="checked-icon" src="https://assets-global.website-files.com/635ac9564cc3682ce1536786/637637410d31673cc7050386_green%20check.svg">Unlimited Clients & Projects
+                          </li>
+                          <li class="plan-list-li">
+                            <img class="checked-icon" src="https://assets-global.website-files.com/635ac9564cc3682ce1536786/637637410d31673cc7050386_green%20check.svg">Invoicing & Payments
+                          </li>
+                        
+                        </ul>
+                      </div>
+                      <button class="btn btn-outline-dark plan-button">Start for free</button>
+                    
+                     <div class="orange-div">
+                      <p>Most Popular</p>
+                     </div>
+
+                  
+                  </div> -->
+                  
+                  <!--Item 3-->
+                  <!-- <div class="flex-items item3">
+                   
+                    
+                      <h1 class="plan-item-heading">Business</h1>
+                      <h2>$ 79<span class="plan-permonth">/month</span></h2>
+                      <button class="btn btn-outline-dark plan-button">Start for free</button>
+                      <p class="plan-paragraph">The perfect package for small businesses and agencies.
+                        Billed annually.</p> -->
+                            <!--List items-->
+                      <!-- <div  class="plan-list-div">
+                        <ul class="plan-list">
+                          <li class="plan-list-li">
+                            <img class="checked-icon" src="https://assets-global.website-files.com/635ac9564cc3682ce1536786/637637410d31673cc7050386_green%20check.svg">All templates
+                          </li>
+                          <li class="plan-list-li">
+                            <img class="checked-icon" src="https://assets-global.website-files.com/635ac9564cc3682ce1536786/637637410d31673cc7050386_green%20check.svg">Unlimited Clients & Projects
+                          </li>
+                          <li class="plan-list-li">
+                            <img class="checked-icon" src="https://assets-global.website-files.com/635ac9564cc3682ce1536786/637637410d31673cc7050386_green%20check.svg">Invoicing & Payments
+                          </li>
+                        
+                        </ul>
+                      </div>
+                      <button class="btn btn-outline-dark plan-button">Start for free</button>
+                    </div>
+                   
+                   
+              </div>
+       </div>
+       </section>  -->
+
+
+         <!--Linking js file-->
+         <script src="index.js"></script>
+     </body>
+</html>
