@@ -1,0 +1,406 @@
+body{
+    margin:0;
+ 
+}
+/*top-section*/
+.navbar-element{
+    margin:0 10px;
+    color:black;
+        
+}
+.navbar-element:hover {
+    text-decoration:none;
+}
+.nav-border{
+    border:1px solid grey;
+}
+/*middle-section*/
+
+#middle-section{
+    text-align:center;
+}
+.middle-top-img{
+   max-width:80vw; /*1vw-1% of view port width*/ 
+   
+
+}
+.middle-para{
+       /*We use margin:auto for mostly inline-block elements and text-algin:center for block and inline.*/
+    margin:8vw auto; /*margin directly applies on element.*/
+
+}
+.middle-h{
+    text-align:left;
+}
+.middle-p{
+    text-align:left;
+}
+@media (min-width:1125px) {
+    .middle-para{
+        width:60vw;
+    }
+    .middle-third-div{
+        width:60vw;
+    }
+    .middle-h{
+        font-size:30px;
+    }
+    .middle-p{
+        font-size:20px;
+    }
+}
+@media (max-width:1125px)
+{    
+    .middle-para{
+        width:70vw;
+    }
+    .middle-third-div{
+        width:70vw;
+    }
+    .middle-h{
+        font-size:25px;
+
+    }
+    .middle-p{
+        font-size:20px;
+    }
+}
+@media (max-width:700px)
+{ 
+    .middle-para{
+        width:90vw;
+    }
+    .middle-third-div{
+        width:90vw;
+    }
+    .middle-h{
+        font-size:18px;
+
+    }
+    .middle-p{
+        font-size:15px;
+    }
+    
+}
+.middle-div{
+    position:relative;
+    padding-top:8.3vw;
+    padding-bottom:8.3vw;
+}
+.middle-inner-div{
+    background-color:lightyellow;
+    width:58.66vw;
+    height:58.66vw;
+    position:absolute;
+    top:0;
+    right:0;
+}
+.middle-inner-div-firstimg{
+    position:relative;
+    display:inline-block; /*to arrange second image after it.*/
+    margin-right:100px;
+    background-size:cover;
+    vertical-align:middle;
+    height:42.66vw;
+    width:42.66vw;
+    background-image:url("https://ableton-production.imgix.net/about/photo-1.jpg?dpr=1.25&fit=crop&h=640&ixjsv=1.1.3&w=640");
+    z-index:1;
+
+}
+.middle-inner-div-secondimg{
+ display:inline-block; /*to arrange it after the first image*/
+ position:relative;
+ vertical-align:middle;
+ background-image:url("https://ableton-production.imgix.net/about/photo-2.jpg?dpr=1.25&fit=crop&h=384&ixjsv=1.1.3&w=512");
+ background-size:cover; 
+ width:33vw;
+ height:25vw;
+ z-index:1;
+}
+.play-button{
+    
+    
+    position:absolute;  
+    left:50%;
+    top:50%;
+    
+}
+.middle-third-div{
+    position:relative;
+    height:30vw;
+    text-align:left;
+    margin:auto;
+
+}
+
+.buttonn{
+    display:none;
+}
+.time-management{    /*added this class to make our time management title at the bottom of image and video bz when we remove img that time management will go up of the video*/
+    font-size:1vw;
+    position:absolute;
+    bottom:0;
+    left:0;
+}
+.topositionbutton{
+    display:inline;
+    position:relative;
+}
+/*Middle 4 div*/
+.middle-4-div{
+    position:relative;
+}
+.middle-4-img{
+   position:relative;
+   z-index:1;
+   height:70vw;
+}
+.middle-4-left-div{
+    position:absolute;
+    top:0;
+    width:58.33vw;
+    height:100%;
+    background-color:paleturquoise;
+}
+
+.middle-4-left-img{
+    position:relative;
+    display:inline-block;
+    margin-right:2vw;
+    height:50vw;
+    width:30vw;
+    top:20%; 
+    right:5%;
+    /* right:10%; */
+}
+
+.left-img-1{
+    top:0;
+    left:0;
+    position:absolute;   
+}
+.left-img-2{
+    bottom:0;
+    left:0;
+    position:absolute;
+}
+.middle-4-right-img{
+    position:relative;
+    display:inline-block;
+    margin-left:2vw;
+    width:41vw;
+    height:41vw;
+    bottom:15%;
+
+}
+/*Middle 5 div*/
+.middle-5-img{
+    width:80vw;
+    height:40vw;
+}
+/*Middle 6 div*/
+.middle-6-div{
+    position:relative;
+}
+.middle-6-inner-div{
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    margin:auto;
+    width:70vw;
+    height:100%;
+    background-color:lightcoral;
+}
+.middle-6-img{
+    display:inline-block;
+    position:relative;
+    z-index:1;
+}
+.middle-6-img1{
+    width:30vw;
+    height:25vw;
+    margin-left:8.33vw;
+}
+.middle-6-img2{
+    width:40vw;
+    height:35vw;
+    margin-left:16.33vw;
+  
+}
+/*Middle 7 div*/
+.middle-7-div{
+   
+}
+.middle-7-img{
+   height:30vw;
+   width:35vw;
+}
+.middle-7-para{
+    width:25vw;
+   margin-top:8.3vw;
+   margin-bottom:8.3vw;
+   margin-left:auto;
+   margin-right:auto;
+
+}
+.middle-7-right-div{
+    height:30vw;
+    width:36vw;
+    display:inline-block;
+    background-color:lightcoral;
+    vertical-align:top;
+    /* margin-left:0;
+    margin-top:0; */
+    
+}
+/*NOTE:-this middle-7-right-div css should be above than media query then only finnaly media effects will be applied otherwise even if media is active we got same css as it is below than it so it will applied*/
+@media (max-width:1280px)
+{
+    .middle-7-img{
+        width:80vw;
+    }
+    .middle-7-right-div{
+        width:80vw;
+
+    }
+    .middle-7-para{
+        bottom:5px;
+        width:60vw;
+        margin-top:5vw;
+        margin-bottom:5vw;
+    }
+}
+/*Seperator between middle and footer*/
+.separator{
+    width:100%;
+    height:100px;
+    border-bottom:solid black 10px;
+}
+/*Bottom section*/
+.ableton-img{
+    width:20vw;
+}
+.flex-container{
+    display:flex;
+    flex-wrap:wrap;  /*using this property we can make our items go in 2nd col otherwise they will added in first row only (non-responsive)*/
+    width:90vw;
+    margin:10vw auto;
+}
+.flex-items{
+    height:250px;
+    width:200px;
+    text-align:left;
+    padding:0.5vw;
+}
+.item1{
+    /* width:100%; */
+    flex-basis:100%; /*This sets the initial length of item same as width*/
+    height:150px;
+}
+.item2{
+    flex-basis:30%;
+}
+.item3{
+    flex-basis:30%;
+}
+.item4{
+    flex-basis:40%;
+}
+.item5{
+    flex-basis:30%;
+}
+.item6{
+    flex-basis:30%;
+}
+.item7{
+    flex-basis:40%;
+}
+.item8{
+    flex-basis:100%;
+}
+
+.list{
+    list-style:none;
+    font-size:25px;
+    padding:0;
+}
+.list-anchor{
+    color:black;
+    font-weight:normal;
+}
+.list-anchor:hover{
+    text-decoration:none;
+   
+}
+.social-img{
+    display:inline-block;
+    margin:0.5vw;
+}
+.input{
+    width:70%;
+    vertical-align:middle;
+}
+.btn{
+ 
+   vertical-align:middle;
+}
+.dropdown{
+    display:inline-block;
+    width:45%;
+}
+
+.button{
+    width:100%;
+    margin:0.5vw;
+}
+.footer-anchor{
+    margin:0.5vw;
+    font-weight:bold;
+    font-size:1.2rem;
+}
+.footer-right-div{
+    float:right; /*to place right div to right-align*/
+    
+}
+.footer-left-div{
+    display:inline-block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:1460px)
+{
+    .flex-items{
+        flex-basis:100%;
+    }
+    .footer-anchor{
+         display:block;
+    }
+    .footer-left-div{
+       clear:left;
+       
+    }
+    .footer-right-div{
+        width:100%;
+    }
+    .item8{
+        height:300px;
+    }
+}
+
+
+
+
+
+
