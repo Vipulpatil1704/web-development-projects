@@ -1,0 +1,57 @@
+.title{
+    display:inline;
+}
+.title{
+    position:fixed;
+}
+.right-side-list{
+    list-style:none;
+    margin-top:25vw;
+}  
+.right-div{
+     display:inline-block;
+     position:absolute;
+     top:2vw;
+     right:2vw;
+     text-align:right;
+}
+.right-div{
+    position:fixed;
+}
+.left-div{
+    display:inline-block;
+    position:absolute;
+    bottom:2vw;
+    left:2vw;
+}
+.left-div{
+    position:fixed;
+}
+.left-div-para{
+    width:20vw;
+}
+.scroll-img{
+    width:25vw;
+    height:70vh;
+}
+html{
+    scroll-snap-type:y mandatory;
+}
+.container{
+    display:inline-block;
+    text-align:center;
+    position:absolute;
+    margin:auto;
+    left:0;
+    right:0;
+}
+.child{
+    scroll-snap-align:start;
+    height:100vh;
+}
+
+body{
+    padding:0;
+    margin:0;
+    transition: background-color 0.5s ease;
+}
